@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_clean:
+	ischroot || just --justfile bindings/justfile vendor
+	dh_auto_clean
+
+override_dh_auto_build:
+	test -e bindings/vendor.tar && just --justfile bindings/justfile vendor-extract
+	dh_auto_build
+
+override_dh_auto_install:
+	dh_auto_install --destdir=debian/tmp

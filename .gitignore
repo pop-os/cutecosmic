@@ -1,4 +1,12 @@
-.cache/
-build*/
-bindings/target/
-
+.cache
+bindings/.cargo
+bindings/target
+bindings/vendor.tar
+build
+debian/*
+!debian/changelog
+!debian/control
+!debian/copyright
+!debian/cutecosmic-qt6.install
+!debian/rules
+!debian/source

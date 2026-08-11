@@ -1,0 +1,10 @@
+vendor:
+    mkdir -p .cargo
+    cargo vendor --locked | head -n -1 > .cargo/config.toml
+    echo 'directory = "vendor"' >> .cargo/config.toml
+    tar pcf vendor.tar vendor
+    rm -rf vendor
+
+vendor-extract:
+    rm -rf vendor
+    tar pxf vendor.tar

@@ -1,5 +1,7 @@
 # CuteCosmic
 
+> Packaging fork of cutecosmic for Pop!_OS 26.04
+
 Plugins to the Qt toolkit that help make Qt (and KDE) applications look and feel more at home in the COSMIC™ Desktop environment.
 
 Currently consists of a Qt Platform Theme plugin.
@@ -19,7 +21,7 @@ The following configuration is relayed from COSMIC settings to Qt applications:
 - [x] High contrast mode (Qt 6.10+)
 - [x] File dialogs
 - [x] Icon theme
-  - Including symbolic icon re-coloring to avoid dark-on-dark icons
+    - Including symbolic icon re-coloring to avoid dark-on-dark icons
 - [x] Fonts
 - [x] Color palette[^1]
 
@@ -61,6 +63,7 @@ You may need to add `sudo` to the last command if building against a system-wide
 If installed correctly, CuteCosmic will automatically be loaded and used when working from inside a `cosmic-session`.
 
 You can force its' usage with the `QT_QPA_PLATFORMTHEME` environment variable, e.g:
+
 ```bash
 QT_QPA_PLATFORMTHEME=cosmic /path/to/a/qt/app
 ```
@@ -90,7 +93,7 @@ Other third party Qt integration plugins:
 - [KDE Plasma](https://invent.kde.org/plasma/plasma-integration)
 - [LXQt](https://github.com/lxqt/lxqt-qtplugin)
 - [qt6ct](https://www.opencode.net/trialuser/qt6ct) (Generic)
-  - [KDE Patches](https://aur.archlinux.org/packages/qt6ct-kde)
+    - [KDE Patches](https://aur.archlinux.org/packages/qt6ct-kde)
 - [GNOME](https://github.com/FedoraQt/QGnomePlatform/)
 - [Liri](https://github.com/lirios/qtintegration)
 - [Haiku](https://github.com/threedeyes/qthaikuplugins)

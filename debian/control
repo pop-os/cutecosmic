@@ -1,0 +1,26 @@
+Source: cutecosmic
+Section: utils
+Maintainer: Michael Murphy <michael@mmurphy.dev>
+Build-Depends:
+    debhelper-compat (=13),
+    cmake,
+    corrosion,
+    just,
+    ninja-build,
+    pkg-config,
+    qt6-base-dev,
+    qt6-base-private-dev,
+    qt6-declarative-dev,
+    rust-all,
+Standards-Version: 4.7.3
+Homepage: https://github.com/pop-os/cutecosmic
+
+Package: cutecosmic-qt6
+Architecture: amd64 arm64
+Depends:
+    ${misc:Depends},
+    ${shlibs:Depends},
+    breeze-icon-theme,
+    libqt6qml6,
+Description: Qt6 platform theme for COSMIC
+ Applies COSMIC theming to Qt6 apps
