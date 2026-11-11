@@ -17,10 +17,10 @@ Homepage: https://github.com/pop-os/cutecosmic
 
 Package: cutecosmic-qt6
 Architecture: amd64 arm64
+Suggests: breeze-icon-theme
 Depends:
     ${misc:Depends},
     ${shlibs:Depends},
-    breeze-icon-theme,
     libqt6qml6,
 Description: Qt6 platform theme for COSMIC
  Applies COSMIC theming to Qt6 apps
